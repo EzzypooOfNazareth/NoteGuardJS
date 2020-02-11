@@ -1,0 +1,18 @@
+mat-card {
+    padding: 10px 15px;
+    display: inline-flex;
+    margin: 15px;
+    background-color: white;
+    color: black;
+
+    .flexer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+
+        button {
+            margin-left: 10px;
+        }
+    }
+}

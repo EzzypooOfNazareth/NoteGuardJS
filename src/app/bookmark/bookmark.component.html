@@ -1,0 +1,13 @@
+<mat-card *ngFor="let bookmark of bookmarkList">
+    <div class="flexer">
+        <div>
+            <mat-card-title>{{ bookmark.tabName }}</mat-card-title>
+    
+            <mat-card-content>
+                <a href="{{ bookmark.url }}" target="_blank">{{ bookmark.url }}</a>
+            </mat-card-content>
+        </div>
+    
+        <button mat-button color="warn" (click)="delBookmark(bookmark._id)">X</button>
+    </div>
+</mat-card>

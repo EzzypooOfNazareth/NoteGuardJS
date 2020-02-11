@@ -1,0 +1,22 @@
+mat-expansion-panel {
+    background-color: white;
+
+    mat-expansion-panel-header {
+        color: black;
+    }
+
+    mat-label {
+        color: gray;
+    }
+
+    input {
+        color: black;
+    }
+
+    form {
+        width: 375px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}

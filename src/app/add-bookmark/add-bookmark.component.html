@@ -1,0 +1,18 @@
+<mat-expansion-panel hideToggle="true" (opened)="isOpen = true" (closed)="isOpen = false" color="accent">
+    <mat-expansion-panel-header>
+        Click to add a new bookmark.
+    </mat-expansion-panel-header>
+
+    <form [formGroup]="bookmarkForm" (ngSubmit)="submitBookmark()" novalidate >
+        <mat-form-field>
+            <mat-label>Tab Name:</mat-label>
+            <input formControlName="tabName" matInput />
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Url:</mat-label>
+            <input formControlName="url" matInput />
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" type="submit">Add</button>
+    </form>
+</mat-expansion-panel>
